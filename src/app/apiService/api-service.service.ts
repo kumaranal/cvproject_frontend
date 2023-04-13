@@ -14,7 +14,7 @@ export class ApiServiceService {
     element:null
   }
    //node api link
-   REST_API:string="http://localhost:7000/api";
+   REST_API:string="https://cv-backend-g0nk.onrender.com/api";
    //set http header
    httpHeaders=new HttpHeaders().set('Content-Type','application/json')
    constructor(private httpClient:HttpClient) { 
