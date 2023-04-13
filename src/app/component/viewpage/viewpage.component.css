@@ -1,0 +1,23 @@
+table {
+  width: 100%;
+}
+
+.tablesize{
+  height:  30px;
+  padding-top: 20 px;
+  padding-bottom: 20 px;
+}
+
+.example-form-field {
+  margin-right: 20px;
+  margin-left: 30px;
+}
+
+mat-form-field {
+  margin-right: 12px;
+  margin-left: 30px;
+
+}
+.edit{
+  margin-left: 20px;
+}

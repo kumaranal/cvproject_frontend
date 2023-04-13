@@ -1,0 +1,42 @@
+.example-card {
+    max-width: 400px;
+    text-align: center;
+    border: 3px solid green;
+  }
+  .outer {
+    width: 400px;
+    height: 100px;
+    background-color: red;
+    
+    position: absolute;
+    top:0;
+    bottom: 300px;
+    left: 0;
+    right: 0;
+    
+    margin: auto;
+  }
+
+  .textcolore{
+    color: red;
+  }
+  .clr{
+    margin-left: 20px;
+  }
+  .label1{
+    padding-right: 60px;
+  }
+  .label2{
+    margin-right: 85px;
+  }
+
+  .label3{
+    margin-right: 65px;
+  }
+
+  .label4{
+    margin-right: 20px;
+  }
+  /* .label5{
+    padding-left: 50%;
+  } */

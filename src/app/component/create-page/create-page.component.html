@@ -1,0 +1,80 @@
+
+
+ <div class="outer">
+    <mat-card class="example-card">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-6">
+
+                    <form [formGroup]="dataForm">
+                        <div>
+                            ADD WORK
+                        </div>
+                        <br>
+                        <div class="form-group field">
+                            <div>
+                                <label class="label1">WORKTITLE</label>
+                                <input type="text" class="form-control" formControlName="workTitle" >
+                            </div>
+                            <span class="text-danger textcolore" *ngIf="dataForm.hasError('required','workTitle') && (saveformflag) ">WORKTITLE is required</span>
+
+                        </div>
+                        <br>
+                        <div class="form-group field">
+                            <div>
+                                <label class="label2">DESCRIPTION</label>
+                                <input type="text" class="form-control" formControlName="description" >
+                            </div>
+                            <span class="text-danger textcolore" *ngIf=" dataForm.hasError('required','description') && (saveformflag) ">DESCRIPTION is required</span>
+
+                        </div>
+                        <br>
+                        <div class="form-group field">
+                            <div>
+                                <label class="label3">START DATE</label>
+                                <input type="date" class="form-control" formControlName="startDate" >
+                            </div>
+                            <span class="text-danger textcolore label5" *ngIf=" dataForm.hasError('required','startDate') && (saveformflag) ">START DATE is required</span>
+
+                        </div>
+                        <br>
+                        <div class="form-group field">
+                            <div>
+                                <label class="label4">END DATE</label>
+                                <input type="date" class="form-control" formControlName="endDate" >
+                            </div>
+                            <span class="text-danger textcolore" *ngIf=" dataForm.hasError('required','endDate') && (saveformflag) ">END DATE is required</span>
+
+                        </div>
+                        <br>
+                        <div class="form-group field1">
+                            <div>
+                                <label class="label5">FILE</label>
+                                <input type="file" class="form-control" (change)="getFile($event)"
+                                    formControlName="file" [ngClass]="{'required':crudApi.passingData.editflag=='false'}">
+                            </div>
+                            <span class="text-danger textcolore" *ngIf="  dataForm.hasError('required','file') && (saveformflag) ">FILE is required</span>
+
+                        </div>
+                        <br>
+                        <br>
+                        <div class="form-group">
+                            
+                            <div *ngIf="!crudApi.passingData.editflag">
+                                <button   class="btn bg-light button1" type="submit" (click)="onSubmit()" >ADD</button>
+                                <button class="btn bg-light clr" type="submit" (click)="clear()">CLEAR</button>    
+                            </div>
+                            <div *ngIf="crudApi.passingData.editflag">
+                                <button  class="btn bg-light" type="submit" (click)="onUpdate()" >UPDATE</button>
+                                <button class="btn bg-light clr" type="submit" (click)="clear()">CLEAR</button>    
+                            </div>
+                             
+
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </mat-card>
+</div>

@@ -1,0 +1,79 @@
+/* .container{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);    
+}
+
+.form-group{
+    padding-bottom: 15px;
+}
+
+.form-control{
+    font-size: 20px;
+    margin: 2px;
+}
+
+.lebel{
+    font-size: 20px;
+    padding-right: 20px;
+
+}
+.btn{
+    font-size: 20px;
+} */
+
+.example-card {
+    max-width: 400px;
+    text-align: center;
+    border: 3px solid green;
+  }
+  .outer {
+    width: 400px;
+    height: 100px;
+    background-color: red;
+    
+    position: absolute;
+    top:0;
+    bottom: 300px;
+    left: 0;
+    right: 0;
+    
+    margin: auto;
+  }
+
+  .textcolore{
+    color: red;
+  }
+  .clr{
+    margin-left: 20px;
+  }
+  .field{
+    text-align: center;
+    left: 0;
+    right:0;
+
+  }
+
+  .label1{
+    margin-right: 30px;
+  }
+  .label2{
+    margin-right: 22px;
+  }
+  .label3{
+    margin-right: 10px;
+  }
+  .label4{
+    margin-right: 10px;
+  }
+  .label5{
+    padding-right: 10px;
+  }
+  .field1{
+    margin-left: 70px;
+  }
